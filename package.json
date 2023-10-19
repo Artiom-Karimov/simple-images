@@ -8,7 +8,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node ./dist/main.js",
-    "start:dev": "nodemon ./src/main.ts",
+    "start:dev": "ts-node ./src/main.ts",
+    "start:watch": "nodemon ./src/main.ts",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -29,7 +30,9 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
-  "dependencies": {},
+  "dependencies": {
+    "canvas": "^2.11.2"
+  },
   "jest": {
     "moduleFileExtensions": [
       "js",
