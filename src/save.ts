@@ -6,8 +6,7 @@ const output = resolve(__dirname, '..', 'output');
 
 const createFolder = async () => {
   try {
-    const exists = await access(output);
-    return;
+    await access(output);
   } catch (error) {
     await mkdir(output);
   }

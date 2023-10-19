@@ -30,4 +30,16 @@ export class ImageBuilder {
 
     return this;
   }
+
+  addRectangle(
+    x: number,
+    y: number,
+    width: number,
+    height: number,
+    fill: string,
+  ): ImageBuilder {
+    this.context.fillStyle = fill;
+    this.context.fillRect(x, y, width, height);
+    return this;
+  }
 }
